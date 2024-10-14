@@ -76,7 +76,6 @@ namespace Assignment3TestSuite
 
             Assert.Contains("illegal method", response.Status.ToLower());
         }
-#if RUN_ALL_TESTS
 
         [Theory]
         [InlineData("create")]
@@ -575,7 +574,6 @@ namespace Assignment3TestSuite
             Assert.Contains("5 not found", response.Status.ToLower());
         }
 
-#endif
 
 
         /**********************************************************
